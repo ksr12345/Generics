@@ -1,5 +1,5 @@
 public class Generics {
-    public void PrintMax(int a, int b, int c){
+    public void PrintMax(float a, float b, float c){
         if (a>b){
             if (a>c){
                 System.out.println(a +" is max.");
@@ -18,10 +18,10 @@ public class Generics {
     public static void main(String[] args) {
         Generics max = new Generics();
         //TestCase1
-        max.PrintMax(2,3,4);
+        max.PrintMax(2.3f,3.5f,4.6f);
         //TestCase2
-        max.PrintMax(2,4,3);
+        max.PrintMax(2.5f,4.2f,3.7f);
         //TestCase3
-        max.PrintMax(4,2,3);
+        max.PrintMax(4.4f,2.9f,3.2f);
     }
 }
