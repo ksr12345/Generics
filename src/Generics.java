@@ -1,13 +1,13 @@
 public class Generics {
-    public void PrintMax(float a, float b, float c){
-        if (a>b){
-            if (a>c){
+    public void PrintMax(String a, String b, String c){
+        if (a.length()>b.length()){
+            if (a.length()>c.length()){
                 System.out.println(a +" is max.");
             } else {
                 System.out.println(c +" is max.");
             }
         } else {
-            if (b>c){
+            if (b.length()>c.length()){
                 System.out.println(b +" is max.");
             } else {
                 System.out.println(c +" is max.");
@@ -18,10 +18,10 @@ public class Generics {
     public static void main(String[] args) {
         Generics max = new Generics();
         //TestCase1
-        max.PrintMax(2.3f,3.5f,4.6f);
+        max.PrintMax("Apple", "Peach", "Banana");
         //TestCase2
-        max.PrintMax(2.5f,4.2f,3.7f);
+        max.PrintMax("Apple", "Banana", "Peach");
         //TestCase3
-        max.PrintMax(4.4f,2.9f,3.2f);
+        max.PrintMax("Banana", "Peach", "Apple");
     }
 }
